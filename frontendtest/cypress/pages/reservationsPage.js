@@ -11,9 +11,9 @@ function createReservation(cy, checkinDate, checkoutDate, contentToConfirm){
     cy.get(createResbuttom).click()
         .get(checkinTextfield).type(checkinDate)
         .get(checkoutTextfield).type(checkoutDate)
-        .get(clientSelect).select('3')
-        .get(roomSelect).select('3')
-        .get(billSelect).select('2')
+        .get(clientSelect).select('2')
+        .get(roomSelect).select('2')
+        .get(billSelect).select('1')
         .get(saveButton).click()
     cy.contains(contentToConfirm)      
 }

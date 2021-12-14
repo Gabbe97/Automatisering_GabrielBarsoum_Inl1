@@ -18,7 +18,7 @@ describe ("Create a new reservation", function(){
     })
 
     it (" creates a new Reservation", function(){
-        reservationsFuncs.createReservation(cy, "2021-11-30", "2021-12-29","Fake Name")
+        reservationsFuncs.createReservation(cy, "2021-11-30", "2021-12-29","Mikael Eriksson")
         dashboardFuncs.performLogout(cy,'Login')
     })
 
